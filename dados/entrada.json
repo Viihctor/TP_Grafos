@@ -1,0 +1,9 @@
+{
+  "tarefas": [
+    { "id": "A", "dependencias": [] },
+    { "id": "B", "dependencias": ["A"] },
+    { "id": "C", "dependencias": ["A", "B"] },
+    { "id": "D", "dependencias": ["C"] },
+    { "id": "E", "dependencias": ["D", "A"] }
+  ]
+}
