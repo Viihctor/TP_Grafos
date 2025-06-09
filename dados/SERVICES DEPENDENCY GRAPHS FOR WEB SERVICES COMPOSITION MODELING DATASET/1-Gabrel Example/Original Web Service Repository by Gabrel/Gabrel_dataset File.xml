@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><services>
+<service name="S1"><inputs><instance name="j"/></inputs><outputs><instance name="m"/></outputs></service>
+<service name="S2"><inputs><instance name="k"/><instance name="p"/></inputs><outputs><instance name="j"/>
+<instance name="m"/></outputs></service><service name="S3"><inputs><instance name="l"/><instance name="m"/>
+</inputs><outputs><instance name="n"/></outputs></service><service name="S4"><inputs><instance name="m"/>
+</inputs><outputs><instance name="p"/></outputs></service><service name="S5"><inputs><instance name="m"/>
+</inputs><outputs><instance name="p"/><instance name="q"/></outputs></service><service name="S6"><inputs>
+<instance name="p"/></inputs><outputs><instance name="r"/><instance name="q"/></outputs></service>
+<service name="S7"><inputs><instance name="j"/></inputs><outputs><instance name="l"/></outputs></service>
+<service name="S8"><inputs><instance name="n"/><instance name="p"/></inputs><outputs><instance name="t"/>
+</outputs></service><service name="S9"><inputs><instance name="l"/></inputs><outputs><instance name="n"/>
+<instance name="p"/></outputs></service>
+</services>

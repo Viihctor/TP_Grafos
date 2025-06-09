@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+    <service name="S1">
+        <inputs>
+            <instance name="j"/>
+        </inputs>
+        <outputs>
+            <instance name="m"/>
+        </outputs>
+    </service>
+    <service name="S2">
+        <inputs>
+            <instance name="k"/>
+        </inputs>
+        <outputs>
+            <instance name="j"/>
+            <instance name="m"/>
+        </outputs>
+    </service>
+    <service name="S3">
+        <inputs>
+            <instance name="l"/>
+        </inputs>
+        <outputs>
+            <instance name="n"/>
+            <instance name="m"/>
+        </outputs>
+    </service>
+    <service name="S4">
+        <inputs>
+            <instance name="m"/>
+        </inputs>
+        <outputs>
+            <instance name="p"/>
+        </outputs>
+    </service>
+    <service name="S5">
+        <inputs>
+            <instance name="m"/>
+        </inputs>
+        <outputs>
+            <instance name="p"/>
+            <instance name="q"/>
+        </outputs>
+    </service>
+    <service name="S6">
+        <inputs>
+            <instance name="p"/>
+        </inputs>
+        <outputs>
+            <instance name="r"/>
+            <instance name="q"/>
+        </outputs>
+    </service>
+    <service name="S7">
+        <inputs>
+            <instance name="j"/>
+        </inputs>
+        <outputs>
+            <instance name="l"/>
+        </outputs>
+    </service>
+    <service name="S8">
+        <inputs>
+            <instance name="n"/>
+        </inputs>
+        <outputs>
+            <instance name="t"/>
+        </outputs>
+    </service>
+    <service name="S9">
+        <inputs>
+            <instance name="l"/>
+        </inputs>
+        <outputs>
+            <instance name="n"/>
+        </outputs>
+    </service>
+    <service name="S10">
+        <inputs>
+            <instance name="r"/>
+        </inputs>
+        <outputs>
+            <instance name="s"/>
+        </outputs>
+    </service>
+    <service name="S11">
+        <inputs>
+            <instance name="q"/>
+        </inputs>
+        <outputs>
+            <instance name="t"/>
+        </outputs>
+    </service>
+    <service name="S12">
+        <inputs>
+            <instance name="s"/>
+            <instance name="t"/>
+        </inputs>
+        <outputs>
+            <instance name="u"/>
+        </outputs>
+    </service>
+    <service name="S13">
+        <inputs>
+            <instance name="u"/>
+        </inputs>
+        <outputs>
+            <instance name="v"/>
+        </outputs>
+    </service>
+    <service name="S14">
+        <inputs>
+            <instance name="v"/>
+        </inputs>
+        <outputs>
+            <instance name="w"/>
+        </outputs>
+    </service>
+    <service name="S15">
+        <inputs>
+            <instance name="w"/>
+        </inputs>
+        <outputs>
+            <instance name="x"/>
+        </outputs>
+    </service>
+    <service name="S16">
+        <inputs>
+            <instance name="x"/>
+        </inputs>
+        <outputs>
+            <instance name="y"/>
+        </outputs>
+    </service>
+    <service name="S17">
+        <inputs>
+            <instance name="y"/>
+        </inputs>
+        <outputs>
+            <instance name="z"/>
+        </outputs>
+    </service>
+    <service name="S18">
+        <inputs>
+            <instance name="z"/>
+        </inputs>
+        <outputs>
+            <instance name="aa"/>
+        </outputs>
+    </service>
+</services>
