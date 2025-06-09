@@ -45,9 +45,9 @@ Projeto acadêmico desenvolvido em **Java** para simular sistemas de tarefas int
 
 ## ▶️ Como Executar o Projeto
 
-## 📥 Formato Esperado dos Dados (JSON)
+## 📥 Formato Esperado dos Dados (Xml)
 
-```json
+```Xml
 {
   "tarefas": [
     { "id": "A", "dependencias": [] },
