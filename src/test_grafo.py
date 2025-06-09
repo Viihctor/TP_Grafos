@@ -1,7 +1,4 @@
 import unittest
-from collections import defaultdict, deque
-import xml.etree.ElementTree as ET
-import pandas as pd
 from Codigo import Grafo  # Corrigido para importar a classe Grafo
 
 class TestGrafo(unittest.TestCase):
@@ -48,6 +45,11 @@ class TestGrafo(unittest.TestCase):
         # Teste para verificar se o método lida com um XML inválido
         with self.assertRaises(FileNotFoundError):
             self.grafo.carregar_de_xml('./caminho/invalido.xml')
+
+    def test_grafo_vazio(self):
+        grafo_vazio = Grafo()
+        self.assertFalse(grafo_vazio.encontrar_ciclo(), "Um grafo vazio não deve ter ciclos.")
+        self.assertEqual(grafo_vazio.ordem_topologica(), [], "A ordem topológica de um grafo vazio deve ser uma lista vazia.")
 
 if __name__ == '__main__':
     unittest.main()
