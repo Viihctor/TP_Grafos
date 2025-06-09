@@ -2,7 +2,7 @@
 # 📦 Gestão de Conflitos em Sistemas de Dependência
 > Trabalho Prático — Grafos (2025)
 
-Projeto acadêmico desenvolvido em **Java** para simular sistemas de tarefas interdependentes utilizando grafos dirigidos. O objetivo é detectar **ciclos de dependência**, executar uma **ordenação topológica segura** e fornecer **visualização interativa** do grafo.
+Projeto acadêmico desenvolvido em **Python** para simular sistemas de tarefas interdependentes utilizando grafos dirigidos. O objetivo é detectar **ciclos de dependência**, executar uma **ordenação topológica segura** e fornecer **visualização interativa** do grafo.
 
 ---
 
@@ -19,12 +19,9 @@ Projeto acadêmico desenvolvido em **Java** para simular sistemas de tarefas int
 
 | Tecnologia  | Uso                                   |
 |-------------|----------------------------------------|
-| Java 17+    | Linguagem de programação principal     |
-| JGraphT     | Estrutura e algoritmos de grafos       |
-| JavaFX      | Interface gráfica (alternativa: Swing) |
-| GraphStream | Visualização gráfica de grafos (extra) |
-| JUnit       | Testes unitários                       |
-| Maven       | Gerenciamento de dependências          |
+| Python    | Linguagem de programação principal     |
+| Python,networkx,matplotlib,scipy      | Interface gráfica |
+| matplotlib networkx pandas | Visualização gráfica de grafos (extra) |
 | Git         | Controle de versão                     |
 
 ---
@@ -62,21 +59,20 @@ Projeto acadêmico desenvolvido em **Java** para simular sistemas de tarefas int
 
 ## 📋 Funcionalidades
 
-- ✅ Leitura de dados a partir de `.json` ou `.csv`
+- ✅ Leitura de dados a partir de `.xml` ou `.csv`
 - ✅ Construção de grafo dirigido com tarefas
-- ✅ Detecção de ciclos (Tarjan ou DFS)
-- ✅ Ordenação topológica segura (Kahn ou DFS)
-- ✅ Interface gráfica para interação e visualização
-- ✅ Exportação de relatório (opcional)
+- ✅ Detecção de ciclos (DFS)
+- ✅ Ordenação topológica segura (Kahn)
+- ✅ Interface gráfica com interação de escolha de arquivo e visualização
 
 ---
 
 ## 📈 Visualização (Em Planejamento)
 
-> Se usar GraphStream ou JavaFX:
+> Em python:
 - Cores diferentes para ciclos detectados
 - Ordem de execução numerada
-- Feedback ao usuário com alertas ou logs
+- Feedback ao usuário com logs
 
 ---
 
@@ -98,9 +94,9 @@ mvn test
 | Nome                | Função no Projeto                         |
 |Victor L. Tornelli   | Modelagem de grafos e documentação inicial|
 | ------------------  | -----------------------------------       |
-| ------------------  | Interface gráfica                         |
-| ------------------  | Leitura de arquivos e testes              |
-| ------------------  | Integração                                |
+| Luisa,Luiz  | Interface gráfica                         |
+| Davi, Pedro | Leitura de arquivos e testes              |
+| Pedro, Davi | Integração                                |
 
 ---
 
