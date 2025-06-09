@@ -89,6 +89,45 @@ mvn test
 
 ---
 
+## ▶ Como Executar a Aplicação em Python
+
+> ⚠ Esta seção refere-se à versão Python do projeto, localizada em src/Codigo.py.
+
+### Requisitos
+
+- *Python 3.8 ou superior*
+- *Bibliotecas Python:*
+  - tkinter (normalmente já incluso no Python)
+  - pandas
+  - networkx
+  - matplotlib
+
+### Instalação das Dependências
+
+Abra o terminal na pasta raiz do projeto e execute:
+
+bash
+pip install pandas networkx matplotlib
+
+
+> Obs.: O tkinter geralmente já vem instalado com o Python. Caso não esteja, instale conforme o seu sistema operacional:
+> - *Windows:* normalmente já está incluso.
+> - *Linux (Debian/Ubuntu):*  
+>   sudo apt-get install python3-tk
+> - *MacOS:* já incluso no Python oficial.
+
+### Como Executar
+
+1. Navegue até a pasta src do projeto:
+    bash
+    cd src
+2. Execute o arquivo principal:
+    bash
+    python Codigo.py
+    
+3. A interface gráfica será aberta.  
+   Use o botão "Carregar Arquivo" para selecionar um arquivo .xml ou .txt de dependências de grafo.
+
 ## 👥 Equipe
 
 | Nome                | Função no Projeto                         |
