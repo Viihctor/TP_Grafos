@@ -128,6 +128,13 @@ pip install pandas networkx matplotlib
 3. A interface gráfica será aberta.  
    Use o botão "Carregar Arquivo" para selecionar um arquivo .xml ou .txt de dependências de grafo.
 
+## Videos e prints de execução
+
+Prints de exemplos de execução e video de execução
+ ![Imagem sem ciclo](.relatorio/img_sem_ciclo.jpg)
+![Imagem com ciclo](relatorio/img_erro.jpg)
+[Ver vídeo](relatorio/video_python.mp4)
+
 ## 👥 Equipe
 
 | Nome                | Função no Projeto                         |
