@@ -1,6 +1,9 @@
 from collections import defaultdict, deque
 import xml.etree.ElementTree as ET
 import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+
 
 class Grafo:
     def __init__(self):
@@ -192,3 +195,34 @@ if __name__ == "__main__":
     print("Ciclo (nós):", ciclo)
     print("Ciclo (arestas):", ciclo_arestas)
     print("Ordem topologica:", ordem_topo)
+
+    # ------------------- VISUALIZAÇÃO DO GRAFO -------------------
+# Criar grafo NetworkX com os dados processados
+G_nx = nx.DiGraph()
+G_nx.add_edges_from(arestas)
+
+# Cores: vermelho se estiver em ciclo, azul se não
+color_map = []
+for node in G_nx.nodes():
+    if ciclo and node in ciclo:
+        color_map.append('red')
+    else:
+        color_map.append('skyblue')
+
+# Layout para organizar os nós
+pos = nx.spring_layout(G_nx, seed=42)  # pode usar spring_layout, kamada_kawai, etc.
+
+plt.figure(figsize=(12, 8))
+nx.draw(G_nx, pos, with_labels=True, node_color=color_map, node_size=2000, arrowsize=20, font_size=10)
+nx.draw_networkx_edge_labels(G_nx, pos, edge_labels={(u, v): "dep" for u, v in G_nx.edges()}, font_color='gray')
+
+# Título informativo
+titulo = "Grafo de Dependências"
+if ciclo:
+    titulo += " (Com Ciclo)"
+else:
+    titulo += " (Ací­clico)"
+plt.title(titulo)
+plt.axis('off')
+plt.tight_layout()
+plt.show()
